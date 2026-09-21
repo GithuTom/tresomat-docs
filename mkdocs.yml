@@ -1,0 +1,319 @@
+site_name: TRESOMAT Dokumentation
+site_url: https://docs.tresomat.ch/
+site_description: Dokumentation für TRESOMAT, Web-Portal und Integration API
+copyright: TRESOMAT
+
+theme:
+  name: material
+  language: de
+  # Nach Bereitstellung aktivieren:
+  # logo: assets/images/logo.svg
+  # favicon: assets/images/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Dunkles Farbschema verwenden
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Helles Farbschema verwenden
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.highlight
+    - search.share
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  generator: false
+
+nav:
+  - Start: index.md
+  - TRESOMAT:
+    - Übersicht: tresomat/index.md
+    - Frontend:
+      - Übersicht: tresomat/frontend/index.md
+      - Frontend-Varianten:
+        - Übersicht: tresomat/frontend/frontend-varianten/index.md
+        - Ziffernblock Single: tresomat/frontend/frontend-varianten/ziffernblock-single.md
+        - Shop Single: tresomat/frontend/frontend-varianten/shop-single.md
+        - Shop + Warenkorb: tresomat/frontend/frontend-varianten/shop-plus-warenkorb.md
+        - Ziffernblock + Warenkorb: tresomat/frontend/frontend-varianten/ziffernblock-plus-warenkorb.md
+        - Shop + Ziffernblock: tresomat/frontend/frontend-varianten/shop-plus-ziffernblock.md
+        - Shop + Ziffernblock + Warenkorb: tresomat/frontend/frontend-varianten/shop-plus-ziffernblock-plus-warenkorb.md
+      - Shop:
+        - Übersicht: tresomat/frontend/shop/index.md
+        - Produktkacheln: tresomat/frontend/shop/produktkacheln.md
+        - Kategorien: tresomat/frontend/shop/kategorien.md
+        - Marken: tresomat/frontend/shop/marken.md
+        - Produktinformationen: tresomat/frontend/shop/produktinformationen.md
+        - Favoriten: tresomat/frontend/shop/favoriten.md
+        - Produktauswahl: tresomat/frontend/shop/produktauswahl.md
+      - Ziffernblock:
+        - Übersicht: tresomat/frontend/ziffernblock/index.md
+        - Betrag eingeben: tresomat/frontend/ziffernblock/betrag-eingeben.md
+        - Freier Betrag: tresomat/frontend/ziffernblock/freier-betrag.md
+        - Hinzufügen: tresomat/frontend/ziffernblock/hinzufuegen.md
+        - Löschen / Rückgängig: tresomat/frontend/ziffernblock/loeschen-rueckgaengig.md
+        - Kombination mit Shop: tresomat/frontend/ziffernblock/kombination-mit-shop.md
+      - Warenkorb:
+        - Übersicht: tresomat/frontend/warenkorb/index.md
+        - Positionen: tresomat/frontend/warenkorb/positionen.md
+        - Mengen: tresomat/frontend/warenkorb/mengen.md
+        - Freie Beträge: tresomat/frontend/warenkorb/freie-betraege.md
+        - Summe: tresomat/frontend/warenkorb/summe.md
+        - Letzten Eintrag rückgängig: tresomat/frontend/warenkorb/letzten-eintrag-rueckgaengig.md
+        - Position entfernen: tresomat/frontend/warenkorb/position-entfernen.md
+        - Bezahlen: tresomat/frontend/warenkorb/bezahlen.md
+      - Compact Checkout:
+        - Übersicht: tresomat/frontend/compact-checkout/index.md
+        - Shop Single: tresomat/frontend/compact-checkout/shop-single.md
+        - Shop + Ziffernblock: tresomat/frontend/compact-checkout/shop-plus-ziffernblock.md
+        - Warenkorbbutton: tresomat/frontend/compact-checkout/warenkorbbutton.md
+        - Anzahl Positionen: tresomat/frontend/compact-checkout/anzahl-positionen.md
+        - Gesamtsumme: tresomat/frontend/compact-checkout/gesamtsumme.md
+        - Rückgängig: tresomat/frontend/compact-checkout/rueckgaengig.md
+        - Bezahlen: tresomat/frontend/compact-checkout/bezahlen.md
+      - Scanning:
+        - Übersicht: tresomat/frontend/scanning/index.md
+        - Scannerbetrieb: tresomat/frontend/scanning/scannerbetrieb.md
+        - OPOS-Scanner: tresomat/frontend/scanning/opos-scanner.md
+        - Keyboard-Fallback: tresomat/frontend/scanning/keyboard-fallback.md
+        - Barcode einem Produkt zuweisen: tresomat/frontend/scanning/barcode-einem-produkt-zuweisen.md
+        - Standard-Barcodes:
+          - Übersicht: tresomat/frontend/scanning/standard-barcodes/index.md
+          - EAN-13: tresomat/frontend/scanning/standard-barcodes/ean-13.md
+          - EAN-8: tresomat/frontend/scanning/standard-barcodes/ean-8.md
+          - UPC-A: tresomat/frontend/scanning/standard-barcodes/upc-a.md
+          - UPC ohne Prüfziffer: tresomat/frontend/scanning/standard-barcodes/upc-ohne-pruefziffer.md
+        - Preis-Barcodes:
+          - Übersicht: tresomat/frontend/scanning/preis-barcodes/index.md
+          - Prefix 21: tresomat/frontend/scanning/preis-barcodes/prefix-21.md
+          - Prefix 22: tresomat/frontend/scanning/preis-barcodes/prefix-22.md
+        - Gewichts-Barcodes:
+          - Übersicht: tresomat/frontend/scanning/gewichts-barcodes/index.md
+          - Prefix 28: tresomat/frontend/scanning/gewichts-barcodes/prefix-28.md
+          - Prefix 29: tresomat/frontend/scanning/gewichts-barcodes/prefix-29.md
+        - Spezialcodes:
+          - Übersicht: tresomat/frontend/scanning/spezialcodes/index.md
+          - Prefix 9002 – Rabatt: tresomat/frontend/scanning/spezialcodes/prefix-9002-rabatt.md
+          - Prefix 9003 – Depot / Rückerstattung: tresomat/frontend/scanning/spezialcodes/prefix-9003-depot-rueckerstattung.md
+        - Prüfziffern: tresomat/frontend/scanning/pruefziffern.md
+        - Duplikatschutz: tresomat/frontend/scanning/duplikatschutz.md
+        - Timing / Inter-Key-Gap: tresomat/frontend/scanning/timing-inter-key-gap.md
+        - Nicht erkannter Barcode: tresomat/frontend/scanning/nicht-erkannter-barcode.md
+        - Beispiele: tresomat/frontend/scanning/beispiele.md
+      - Zahlung:
+        - Übersicht: tresomat/frontend/zahlung/index.md
+        - Zahlungsablauf: tresomat/frontend/zahlung/zahlungsablauf.md
+        - Zahlungswahl: tresomat/frontend/zahlung/zahlungswahl.md
+        - Bargeld: tresomat/frontend/zahlung/bargeld.md
+        - Cashmatic: tresomat/frontend/zahlung/cashmatic.md
+        - Karte / PayTec: tresomat/frontend/zahlung/karte-paytec.md
+        - Vorgangsnummer: tresomat/frontend/zahlung/vorgangsnummer.md
+      - Quittungen:
+        - Übersicht: tresomat/frontend/quittungen/index.md
+        - Quittungsabfrage: tresomat/frontend/quittungen/quittungsabfrage.md
+        - Sofortdruck: tresomat/frontend/quittungen/sofortdruck.md
+        - Bar-Quittung: tresomat/frontend/quittungen/bar-quittung.md
+        - Karten-Quittung: tresomat/frontend/quittungen/karten-quittung.md
+        - Vorgang: tresomat/frontend/quittungen/vorgang.md
+      - Sprache: tresomat/frontend/sprache.md
+      - Screensaver: tresomat/frontend/screensaver.md
+      - Typische Kundenabläufe: tresomat/frontend/typische-kundenablaeufe.md
+    - Backend:
+      - Übersicht: tresomat/backend/index.md
+      - Anmeldung / PIN: tresomat/backend/anmeldung-pin.md
+      - Dashboard: tresomat/backend/dashboard.md
+      - Benutzer: tresomat/backend/benutzer.md
+      - Produkte: tresomat/backend/produkte.md
+      - Kategorien: tresomat/backend/kategorien.md
+      - Marken: tresomat/backend/marken.md
+      - Transaktionen: tresomat/backend/transaktionen.md
+      - Dokumente:
+        - Übersicht: tresomat/backend/dokumente/index.md
+        - Quittungsdesigner: tresomat/backend/dokumente/quittungsdesigner.md
+        - Transaktionsdokument: tresomat/backend/dokumente/transaktionsdokument.md
+        - Verkaufsjournal: tresomat/backend/dokumente/verkaufsjournal.md
+        - Mehrwertsteuer: tresomat/backend/dokumente/mehrwertsteuer.md
+        - Vorgangsanalyse: tresomat/backend/dokumente/vorgangsanalyse.md
+      - Datenbanken:
+        - Übersicht: tresomat/backend/datenbanken/index.md
+        - Backup: tresomat/backend/datenbanken/backup.md
+        - Wiederherstellung: tresomat/backend/datenbanken/wiederherstellung.md
+        - Aufbewahrung: tresomat/backend/datenbanken/aufbewahrung.md
+        - Bereinigung: tresomat/backend/datenbanken/bereinigung.md
+      - Messenger:
+        - Übersicht: tresomat/backend/messenger/index.md
+        - SMTP: tresomat/backend/messenger/smtp.md
+        - Benachrichtigungen: tresomat/backend/messenger/benachrichtigungen.md
+        - Ereignisse: tresomat/backend/messenger/ereignisse.md
+      - Updates: tresomat/backend/updates.md
+      - Cloud Sync: tresomat/backend/cloud-sync.md
+      - Tagesabschluss: tresomat/backend/tagesabschluss.md
+      - Hardware:
+        - Übersicht: tresomat/backend/hardware/index.md
+        - Scanner: tresomat/backend/hardware/scanner.md
+        - Cashmatic Admin: tresomat/backend/hardware/cashmatic-admin.md
+        - PayTec Terminal: tresomat/backend/hardware/paytec-terminal.md
+        - Drucker: tresomat/backend/hardware/drucker.md
+    - Installation & Betrieb:
+      - Übersicht: tresomat/installation-und-betrieb/index.md
+      - Voraussetzungen: tresomat/installation-und-betrieb/voraussetzungen.md
+      - Installation: tresomat/installation-und-betrieb/installation.md
+      - Config.xml:
+        - Übersicht: tresomat/installation-und-betrieb/configxml/index.md
+        - Frontenddarstellung: tresomat/installation-und-betrieb/configxml/frontenddarstellung.md
+        - Shop: tresomat/installation-und-betrieb/configxml/shop.md
+        - Warenkorb: tresomat/installation-und-betrieb/configxml/warenkorb.md
+        - Ziffernblock: tresomat/installation-und-betrieb/configxml/ziffernblock.md
+        - Scanner: tresomat/installation-und-betrieb/configxml/scanner.md
+        - Cashmatic: tresomat/installation-und-betrieb/configxml/cashmatic.md
+        - PayTec: tresomat/installation-und-betrieb/configxml/paytec.md
+        - Quittungen: tresomat/installation-und-betrieb/configxml/quittungen.md
+        - Screensaver: tresomat/installation-und-betrieb/configxml/screensaver.md
+        - Cloud Sync: tresomat/installation-und-betrieb/configxml/cloud-sync.md
+      - Integration API konfigurieren: tresomat/installation-und-betrieb/integration-api-konfigurieren.md
+      - Update: tresomat/installation-und-betrieb/update.md
+      - Reinstallation: tresomat/installation-und-betrieb/reinstallation.md
+      - Deinstallation: tresomat/installation-und-betrieb/deinstallation.md
+      - Backup: tresomat/installation-und-betrieb/backup.md
+      - Troubleshooting: tresomat/installation-und-betrieb/troubleshooting.md
+  - Web-Portal:
+    - Übersicht: web-portal/index.md
+    - Kundenbereich:
+      - Übersicht: web-portal/kundenbereich/index.md
+      - Anmeldung: web-portal/kundenbereich/anmeldung.md
+      - Passwort vergessen: web-portal/kundenbereich/passwort-vergessen.md
+      - Dashboard: web-portal/kundenbereich/dashboard.md
+      - Maschinen:
+        - Übersicht: web-portal/kundenbereich/maschinen/index.md
+        - Status: web-portal/kundenbereich/maschinen/status.md
+        - Health: web-portal/kundenbereich/maschinen/health.md
+        - letzte Synchronisation: web-portal/kundenbereich/maschinen/letzte-synchronisation.md
+      - Reports:
+        - Übersicht: web-portal/kundenbereich/reports/index.md
+        - Alle Transaktionen: web-portal/kundenbereich/reports/alle-transaktionen.md
+        - Vorgang suchen: web-portal/kundenbereich/reports/vorgang-suchen.md
+        - Produktverkäufe / Ranking: web-portal/kundenbereich/reports/produktverkaeufe-ranking.md
+        - Lagerbestände: web-portal/kundenbereich/reports/lagerbestaende.md
+        - Mehrwertsteuer: web-portal/kundenbereich/reports/mehrwertsteuer.md
+      - Katalog:
+        - Übersicht: web-portal/kundenbereich/katalog/index.md
+        - Produkte: web-portal/kundenbereich/katalog/produkte.md
+        - Kategorien: web-portal/kundenbereich/katalog/kategorien.md
+        - Marken: web-portal/kundenbereich/katalog/marken.md
+        - Excel Import / Export: web-portal/kundenbereich/katalog/excel-import-export.md
+        - Bilder: web-portal/kundenbereich/katalog/bilder.md
+      - Updates: web-portal/kundenbereich/updates.md
+      - Benachrichtigungen: web-portal/kundenbereich/benachrichtigungen.md
+      - Profil: web-portal/kundenbereich/profil.md
+      - Benutzer & Rollen: web-portal/kundenbereich/benutzer-und-rollen.md
+      - Sprache: web-portal/kundenbereich/sprache.md
+    - Admin / Support:
+      - Übersicht: web-portal/admin-support/index.md
+      - Kunden: web-portal/admin-support/kunden.md
+      - Maschinen: web-portal/admin-support/maschinen.md
+      - Registrierung & Kopplung: web-portal/admin-support/registrierung-und-kopplung.md
+      - Machine Tokens: web-portal/admin-support/machine-tokens.md
+      - Cloud Sync:
+        - Übersicht: web-portal/admin-support/cloud-sync/index.md
+        - Status: web-portal/admin-support/cloud-sync/status.md
+        - Pending: web-portal/admin-support/cloud-sync/pending.md
+        - Failed: web-portal/admin-support/cloud-sync/failed.md
+        - Konflikte: web-portal/admin-support/cloud-sync/konflikte.md
+        - letzter Sync: web-portal/admin-support/cloud-sync/letzter-sync.md
+      - Health Center:
+        - Übersicht: web-portal/admin-support/health-center/index.md
+        - Timeline: web-portal/admin-support/health-center/timeline.md
+        - Diagnose: web-portal/admin-support/health-center/diagnose.md
+      - Update Center: web-portal/admin-support/update-center.md
+      - Benutzer & Rollen: web-portal/admin-support/benutzer-und-rollen.md
+      - Kundenlogin / Supportzugriff: web-portal/admin-support/kundenlogin-supportzugriff.md
+      - Security: web-portal/admin-support/security.md
+      - Audit Log: web-portal/admin-support/audit-log.md
+      - Sprachpakete: web-portal/admin-support/sprachpakete.md
+      - Mail / SMTP: web-portal/admin-support/mail-smtp.md
+      - System: web-portal/admin-support/system.md
+  - Integration API:
+    - Übersicht: api/index.md
+    - Erste Inbetriebnahme: api/erste-inbetriebnahme.md
+    - Konfiguration: api/konfiguration.md
+    - SigningKey: api/signingkey.md
+    - ClientId / ClientSecret: api/clientid-clientsecret.md
+    - SecretHash: api/secrethash.md
+    - Authentifizierung:
+      - Übersicht: api/authentifizierung/index.md
+      - Login: api/authentifizierung/login.md
+      - Bearer Token: api/authentifizierung/bearer-token.md
+      - Refresh Token: api/authentifizierung/refresh-token.md
+    - Scopes: api/scopes.md
+    - Swagger: api/swagger.md
+    - Catalog:
+      - Übersicht: api/catalog/index.md
+      - Produkte: api/catalog/produkte.md
+      - Kategorien: api/catalog/kategorien.md
+      - Marken: api/catalog/marken.md
+    - Sales: api/sales.md
+    - Transactions: api/transactions.md
+    - Payments:
+      - Übersicht: api/payments/index.md
+      - Cash: api/payments/cash.md
+      - Card: api/payments/card.md
+      - Idempotency: api/payments/idempotency.md
+      - Status: api/payments/status.md
+      - recovery_required: api/payments/recovery-required.md
+    - System:
+      - Übersicht: api/system/index.md
+      - Health: api/system/health.md
+      - Status: api/system/status.md
+    - Fehlercodes: api/fehlercodes.md
+    - Postman: api/postman.md
+    - Testclient: api/testclient.md
+    - Codebeispiele:
+      - Übersicht: api/codebeispiele/index.md
+      - cURL: api/codebeispiele/curl.md
+      - PowerShell: api/codebeispiele/powershell.md
+      - C#: api/codebeispiele/csharp.md
+  - Support:
+    - Übersicht: support/index.md
+    - Vorgang suchen: support/vorgang-suchen.md
+    - Vorgangsnummer verstehen: support/vorgangsnummer-verstehen.md
+    - Zahlung nicht abgeschlossen: support/zahlung-nicht-abgeschlossen.md
+    - Cashmatic: support/cashmatic.md
+    - PayTec: support/paytec.md
+    - Scanner: support/scanner.md
+    - Drucker / Quittung: support/drucker-quittung.md
+    - Cloud Sync: support/cloud-sync.md
+    - Web-Portal: support/web-portal.md
+    - Integration API: support/integration-api.md
+    - Logs: support/logs.md
+    - Checklisten: support/checklisten.md
+  - Downloads:
+    - Übersicht: downloads/index.md
+    - TRESOMAT Handbuch PDF: downloads/tresomat-handbuch-pdf.md
+    - Web-Portal Handbuch PDF: downloads/web-portal-handbuch-pdf.md
+    - Integration API Manual PDF: downloads/integration-api-manual-pdf.md
+    - Release Notes PDF: downloads/release-notes-pdf.md
+  - Release Notes:
+    - Übersicht: release-notes/index.md
+    - TRESOMAT: release-notes/tresomat.md
+    - Web-Portal: release-notes/web-portal.md
+    - Integration API: release-notes/integration-api.md

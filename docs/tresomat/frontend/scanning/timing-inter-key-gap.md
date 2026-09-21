@@ -1,0 +1,59 @@
+# Timing / Inter-Key-Gap
+
+## Zweck
+
+TODO – Inhalt wird ergänzt
+
+## Darstellung
+
+<!-- Screenshot hier einfügen, z. B. relativ zu: ../../../assets/images/screenshot.png -->
+
+*[Screenshot-Platzhalter]*
+
+## Bedienelemente
+
+TODO – Inhalt wird ergänzt
+
+## Funktionsweise
+
+TODO – Inhalt wird ergänzt
+
+## Ablauf
+
+TODO – Inhalt wird ergänzt
+
+## Hinweise
+
+TODO – Inhalt wird ergänzt
+
+## Codeaufbau
+
+TODO – Inhalt und schematische Codegrafik werden ergänzt
+
+## Beispiel
+
+TODO – Inhalt wird ergänzt
+
+## Produktreferenz
+
+TODO – Inhalt wird ergänzt
+
+## Preis-/Gewichtsteil
+
+TODO – Inhalt wird ergänzt
+
+## Prüfziffer
+
+TODO – Inhalt wird ergänzt
+
+## Verhalten in TRESOMAT
+
+TODO – Inhalt wird ergänzt
+
+## Fehlerfälle
+
+TODO – Inhalt wird ergänzt
+
+## Verwandte Themen
+
+TODO – Inhalt wird ergänzt
