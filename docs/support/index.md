@@ -1,35 +1,98 @@
 # Support
 
-## Zweck
+<p class="page-lead">Was möchten Sie lösen?</p>
 
-TODO – Inhalt wird ergänzt
+<div class="grid cards" markdown>
 
-## Darstellung
+-   :material-credit-card-outline:{ .lg .middle }
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../assets/images/screenshot.png -->
+    **Zahlung**
 
-*[Screenshot-Platzhalter]*
+    Nicht abgeschlossene oder unklare Zahlungsvorgänge untersuchen.
 
-## Bedienelemente
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](zahlung-nicht-abgeschlossen.md)
 
-## Funktionsweise
+-   :material-barcode-scan:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **Scanner**
 
-## Ablauf
+    Scannerbetrieb und nicht erkannte Barcodes prüfen.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Hinweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](scanner.md)
 
-TODO – Inhalt wird ergänzt
+-   :material-receipt-text-outline:{ .lg .middle }
 
-## Fehlerfälle
+    **Quittung**
 
-TODO – Inhalt wird ergänzt
+    Drucker- und Quittungsprobleme eingrenzen.
 
-## Verwandte Themen
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](drucker-quittung.md)
+
+-   :material-contactless-payment:{ .lg .middle }
+
+    **PayTec**
+
+    Terminalverbindung und Kartenzahlungen analysieren.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](paytec.md)
+
+-   :material-cash-register:{ .lg .middle }
+
+    **Cashmatic**
+
+    Bargeldsystem und Gerätestatus prüfen.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](cashmatic.md)
+
+-   :material-cloud-sync-outline:{ .lg .middle }
+
+    **Cloud Sync**
+
+    Synchronisation, Pending- und Fehlerzustände prüfen.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](cloud-sync.md)
+
+-   :material-api:{ .lg .middle }
+
+    **API**
+
+    Authentifizierung, Aufrufe und Fehlercodes untersuchen.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](integration-api.md)
+
+-   :material-monitor-dashboard:{ .lg .middle }
+
+    **Portal**
+
+    Anmeldung, Maschinenansicht und Reports prüfen.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](web-portal.md)
+
+</div>
+
+<div class="support-callout" markdown>
+
+## Problem mit einer Zahlung?
+
+Finden Sie zuerst die Vorgangsnummer auf der Quittung und öffnen Sie anschließend die Vorgangsanalyse.
+
+[Vorgangsnummer verstehen](vorgangsnummer-verstehen.md){ .md-button }
+[Vorgang suchen](vorgang-suchen.md){ .md-button .md-button--primary }
+
+</div>

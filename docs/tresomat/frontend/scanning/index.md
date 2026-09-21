@@ -1,35 +1,98 @@
 # Scanning
 
-## Zweck
+<p class="page-lead">Referenz für Scannerbetrieb, Barcodeformate und Spezialcodes.</p>
 
-TODO – Inhalt wird ergänzt
+<div class="grid cards" markdown>
 
-## Darstellung
+-   :material-barcode:{ .lg .middle }
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../../../assets/images/screenshot.png -->
+    **EAN-13**
 
-*[Screenshot-Platzhalter]*
+    Standardbarcode mit 13 Stellen.
 
-## Bedienelemente
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](standard-barcodes/ean-13.md)
 
-## Funktionsweise
+-   :material-barcode:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **EAN-8**
 
-## Ablauf
+    Kompakter Standardbarcode mit 8 Stellen.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Hinweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](standard-barcodes/ean-8.md)
 
-TODO – Inhalt wird ergänzt
+-   :material-barcode-scan:{ .lg .middle }
 
-## Fehlerfälle
+    **UPC-A**
 
-TODO – Inhalt wird ergänzt
+    UPC-Standard für Artikelreferenzen.
 
-## Verwandte Themen
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](standard-barcodes/upc-a.md)
+
+-   :material-barcode-scan:{ .lg .middle }
+
+    **UPC ohne Prüfziffer**
+
+    Verarbeitung verkürzter UPC-Codes.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](standard-barcodes/upc-ohne-pruefziffer.md)
+
+-   :material-currency-usd:{ .lg .middle }
+
+    **21 / 22 Preis**
+
+    Preis-Barcodes mit den Präfixen 21 und 22.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](preis-barcodes/index.md)
+
+-   :material-weight:{ .lg .middle }
+
+    **28 / 29 Gewicht**
+
+    Gewichts-Barcodes mit den Präfixen 28 und 29.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](gewichts-barcodes/index.md)
+
+-   :material-sale:{ .lg .middle }
+
+    **9002 Rabatt**
+
+    Spezialcode für Rabattvorgänge.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](spezialcodes/prefix-9002-rabatt.md)
+
+-   :material-cash-refund:{ .lg .middle }
+
+    **9003 Depot**
+
+    Spezialcode für Depot oder Rückerstattung.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](spezialcodes/prefix-9003-depot-rueckerstattung.md)
+
+</div>
+
+## Betrieb und Diagnose
+
+- [Scannerbetrieb](scannerbetrieb.md)
+- [OPOS-Scanner](opos-scanner.md)
+- [Keyboard-Fallback](keyboard-fallback.md)
+- [Nicht erkannter Barcode](nicht-erkannter-barcode.md)
+- [Timing / Inter-Key-Gap](timing-inter-key-gap.md)
+
+!!! warning "Wichtig"
+    Barcodeaufbau und Prüfziffern müssen vor dem produktiven Einsatz anhand der freigegebenen TRESOMAT-Konfiguration geprüft werden.

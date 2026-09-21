@@ -1,0 +1,4 @@
+Finale Dateien hier ablegen:
+- tresomat-logo.svg
+- tresomat-logo-dark.svg
+- favicon.png

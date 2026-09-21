@@ -1,35 +1,50 @@
 # TRESOMAT
 
-## Zweck
+<p class="page-lead">Lokale Kassen- und Automatenlösung</p>
 
-TODO – Inhalt wird ergänzt
+<div class="grid cards" markdown>
 
-## Darstellung
+-   :material-view-dashboard-outline:{ .lg .middle }
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../assets/images/screenshot.png -->
+    **Frontend**
 
-*[Screenshot-Platzhalter]*
+    Bedienoberflächen, Checkout, Scanning und Zahlung.
 
-## Bedienelemente
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](frontend/index.md)
 
-## Funktionsweise
+-   :material-server:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **Backend**
 
-## Ablauf
+    Stammdaten, Transaktionen, Dokumente und Hardware.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Hinweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](backend/index.md)
 
-TODO – Inhalt wird ergänzt
+-   :material-cog-outline:{ .lg .middle }
 
-## Fehlerfälle
+    **Installation & Betrieb**
 
-TODO – Inhalt wird ergänzt
+    Installation, Konfiguration, Updates und Fehleranalyse.
 
-## Verwandte Themen
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](installation-und-betrieb/index.md)
+
+</div>
+
+## Schnellzugriffe
+
+- [Frontendvarianten](frontend/frontend-varianten/index.md)
+- [Scanner und Barcodes](frontend/scanning/index.md)
+- [Zahlungsablauf](frontend/zahlung/zahlungsablauf.md)
+- [Vorgangsanalyse](backend/dokumente/vorgangsanalyse.md)
+- [Config.xml](installation-und-betrieb/configxml/index.md)
+
+## Typische Abläufe
+
+!!! tip "Schneller Einstieg"
+    Beginnen Sie mit den [Frontendvarianten](frontend/frontend-varianten/index.md) und wechseln Sie anschließend zu [Installation & Betrieb](installation-und-betrieb/index.md).

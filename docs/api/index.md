@@ -1,35 +1,57 @@
 # Integration API
 
-## Zweck
+<p class="page-lead">Technische Integration für Katalog, Verkäufe, Transaktionen und Zahlungen.</p>
 
-TODO – Inhalt wird ergänzt
+<div class="grid cards" markdown>
 
-## Darstellung
+-   :material-rocket-launch-outline:{ .lg .middle }
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../assets/images/screenshot.png -->
+    **Erste Schritte**
 
-*[Screenshot-Platzhalter]*
+    Konfiguration, SigningKey und Client-Zugangsdaten.
 
-## Bedienelemente
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](erste-inbetriebnahme.md)
 
-## Funktionsweise
+-   :material-lock-outline:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **Authentifizierung**
 
-## Ablauf
+    Login, Bearer Token, Refresh Token und Scopes.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Hinweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](authentifizierung/index.md)
 
-TODO – Inhalt wird ergänzt
+-   :material-swap-horizontal:{ .lg .middle }
 
-## Fehlerfälle
+    **Endpunkte**
 
-TODO – Inhalt wird ergänzt
+    Catalog, Sales, Transactions, Payments und System.
 
-## Verwandte Themen
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](catalog/index.md)
+
+-   :material-tools:{ .lg .middle }
+
+    **Werkzeuge**
+
+    Swagger, Postman und Testclient für Entwicklung und Tests.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](swagger.md)
+
+</div>
+
+!!! info "Sicher integrieren"
+    Verwenden Sie für produktive Integrationen ausschließlich freigegebene Zugangsdaten und dokumentierte Scopes.
+
+## Referenz
+
+- [Fehlerbehandlung](fehlercodes.md)
+- [Codebeispiele](codebeispiele/index.md)
+- [Payment-Status](payments/status.md)
+- [System Health](system/health.md)

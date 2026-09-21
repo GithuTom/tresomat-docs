@@ -1,35 +1,18 @@
 # Release Notes
 
-## Zweck
+<p class="page-lead">Änderungen an TRESOMAT, Web-Portal und Integration API.</p>
 
-TODO – Inhalt wird ergänzt
+<article class="release-entry">
+  <div class="release-heading"><div><span class="release-product">TRESOMAT PRODUKTFAMILIE</span><h2>Nächste Version</h2></div><time>Datum folgt</time></div>
+  <div class="release-columns">
+    <section><span class="status-badge status-new">NEW</span><p>TODO – Neue Funktionen werden ergänzt.</p></section>
+    <section><span class="status-badge status-improved">IMPROVED</span><p>TODO – Verbesserungen werden ergänzt.</p></section>
+    <section><span class="status-badge status-fixed">FIXED</span><p>TODO – Behobene Fehler werden ergänzt.</p></section>
+  </div>
+</article>
 
-## Darstellung
+## Produkte
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../assets/images/screenshot.png -->
-
-*[Screenshot-Platzhalter]*
-
-## Bedienelemente
-
-TODO – Inhalt wird ergänzt
-
-## Funktionsweise
-
-TODO – Inhalt wird ergänzt
-
-## Ablauf
-
-TODO – Inhalt wird ergänzt
-
-## Hinweise
-
-TODO – Inhalt wird ergänzt
-
-## Fehlerfälle
-
-TODO – Inhalt wird ergänzt
-
-## Verwandte Themen
-
-TODO – Inhalt wird ergänzt
+- [TRESOMAT](tresomat.md)
+- [Web-Portal](web-portal.md)
+- [Integration API](integration-api.md)

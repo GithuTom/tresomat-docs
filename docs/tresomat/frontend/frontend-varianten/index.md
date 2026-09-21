@@ -2,34 +2,71 @@
 
 ## Zweck
 
-TODO – Inhalt wird ergänzt
+Die Varianten kombinieren Shop, Ziffernblock und Warenkorb für unterschiedliche Verkaufssituationen.
 
-## Darstellung
+<div class="grid cards" markdown>
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../../../assets/images/screenshot.png -->
+-   :material-numeric:{ .lg .middle }
 
-*[Screenshot-Platzhalter]*
+    **Ziffernblock Single**
 
-## Bedienelemente
+    Direkte Betragseingabe ohne Produktkatalog.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Funktionsweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](ziffernblock-single.md)
 
-TODO – Inhalt wird ergänzt
+-   :material-storefront-outline:{ .lg .middle }
 
-## Ablauf
+    **Shop Single**
 
-TODO – Inhalt wird ergänzt
+    Schnelle Produktauswahl für Einzelverkäufe.
 
-## Hinweise
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](shop-single.md)
 
-## Fehlerfälle
+-   :material-cart-outline:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **Shop + Warenkorb**
 
-## Verwandte Themen
+    Produktauswahl mit vollständigem Warenkorb.
 
-TODO – Inhalt wird ergänzt
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](shop-plus-warenkorb.md)
+
+-   :material-calculator-variant-outline:{ .lg .middle }
+
+    **Ziffernblock + Warenkorb**
+
+    Freie Beträge als Warenkorbpositionen.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](ziffernblock-plus-warenkorb.md)
+
+-   :material-view-grid-plus-outline:{ .lg .middle }
+
+    **Shop + Ziffernblock**
+
+    Produkte und freie Beträge kombinieren.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](shop-plus-ziffernblock.md)
+
+-   :material-cart-plus:{ .lg .middle }
+
+    **Shop + Ziffernblock + Warenkorb**
+
+    Vollständige kombinierte Verkaufsoberfläche.
+
+    ---
+
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](shop-plus-ziffernblock-plus-warenkorb.md)
+
+</div>
+
+!!! note "Screenshots"
+    Jede Karte ist für einen eigenen Screenshot vorbereitet. Finale Produktbilder werden unter `docs/assets/images/` abgelegt.

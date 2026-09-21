@@ -1,35 +1,34 @@
 # Web-Portal
 
-## Zweck
+<p class="page-lead">Zentrale Verwaltung für Kunden, Maschinen, Reports und Support.</p>
 
-TODO – Inhalt wird ergänzt
+<div class="grid cards" markdown>
 
-## Darstellung
+-   :material-account-circle-outline:{ .lg .middle }
 
-<!-- Screenshot hier einfügen, z. B. relativ zu: ../assets/images/screenshot.png -->
+    **Kundenbereich**
 
-*[Screenshot-Platzhalter]*
+    Maschinen, Reports, Katalog, Updates und Benutzerverwaltung.
 
-## Bedienelemente
+    ---
 
-TODO – Inhalt wird ergänzt
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](kundenbereich/index.md)
 
-## Funktionsweise
+-   :material-shield-account-outline:{ .lg .middle }
 
-TODO – Inhalt wird ergänzt
+    **Admin / Support**
 
-## Ablauf
+    Kundenverwaltung, Health Center, Cloud Sync und Diagnose.
 
-TODO – Inhalt wird ergänzt
+    ---
 
-## Hinweise
+    [Bereich öffnen :material-arrow-right:{ .link-icon }](admin-support/index.md)
 
-TODO – Inhalt wird ergänzt
+</div>
 
-## Fehlerfälle
+## Schnellzugriffe
 
-TODO – Inhalt wird ergänzt
-
-## Verwandte Themen
-
-TODO – Inhalt wird ergänzt
+- [Maschinenstatus](kundenbereich/maschinen/status.md)
+- [Alle Transaktionen](kundenbereich/reports/alle-transaktionen.md)
+- [Cloud-Sync-Status](admin-support/cloud-sync/status.md)
+- [Health Center](admin-support/health-center/index.md)
