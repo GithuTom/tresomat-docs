@@ -2,7 +2,7 @@
 
 <p class="page-lead">Technische Integration für Katalog, Verkäufe, Transaktionen und Zahlungen.</p>
 
-<div class="grid cards" markdown>
+<div class="grid cards landing-cards" markdown>
 
 -   :material-rocket-launch-outline:{ .lg .middle }
 
@@ -12,7 +12,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](erste-inbetriebnahme.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](erste-inbetriebnahme.md)
 
 -   :material-lock-outline:{ .lg .middle }
 
@@ -22,7 +22,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](authentifizierung/index.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](authentifizierung/index.md)
 
 -   :material-swap-horizontal:{ .lg .middle }
 
@@ -32,7 +32,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](catalog/index.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](catalog/index.md)
 
 -   :material-tools:{ .lg .middle }
 
@@ -42,16 +42,29 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](swagger.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](swagger.md)
+
+-   :material-alert-circle-outline:{ .lg .middle }
+
+    **Fehlerbehandlung**
+
+    HTTP-Fehler und API-Rückmeldungen systematisch einordnen.
+
+    ---
+
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](fehlercodes.md)
+
+-   :material-code-tags:{ .lg .middle }
+
+    **Codebeispiele**
+
+    Beispiele für cURL, PowerShell und C#.
+
+    ---
+
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](codebeispiele/index.md)
 
 </div>
 
 !!! info "Sicher integrieren"
     Verwenden Sie für produktive Integrationen ausschließlich freigegebene Zugangsdaten und dokumentierte Scopes.
-
-## Referenz
-
-- [Fehlerbehandlung](fehlercodes.md)
-- [Codebeispiele](codebeispiele/index.md)
-- [Payment-Status](payments/status.md)
-- [System Health](system/health.md)

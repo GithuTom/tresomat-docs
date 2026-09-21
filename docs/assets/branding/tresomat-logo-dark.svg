@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80"><!-- TRESOMAT Logo-Platzhalter: vor Veröffentlichung ersetzen --></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330">
+  <style>.main{font-family:Arial,Helvetica,sans-serif;font-size:126px;font-weight:700}.sub{font-family:Arial,Helvetica,sans-serif;font-size:42px;letter-spacing:8px}</style>
+  <text x="600" y="155" text-anchor="middle" class="main"><tspan fill="#FFFFFF">TRES</tspan><tspan fill="#1E88E5">MATIC</tspan></text>
+  <line x1="65" y1="239" x2="330" y2="239" stroke="#1E88E5" stroke-width="5"/>
+  <text x="600" y="251" text-anchor="middle" class="sub" fill="#1E88E5">POS SYSTEM</text>
+  <line x1="870" y1="239" x2="1135" y2="239" stroke="#1E88E5" stroke-width="5"/>
+</svg>

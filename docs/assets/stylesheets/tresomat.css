@@ -120,3 +120,112 @@ body { letter-spacing: .003em; }
   .release-columns { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+/* TRESOMAT Docs V2.1 Final Polish */
+:root {
+  --tresomat-shadow-soft: 0 3px 12px rgba(23, 52, 93, .07);
+  --tresomat-shadow-hover: 0 8px 22px rgba(23, 52, 93, .11);
+}
+
+.md-grid { max-width: 82rem; }
+.md-main__inner { margin-top: .85rem; }
+.md-content__inner { max-width: 900px; }
+.md-sidebar { width: 11.2rem; }
+.md-sidebar--secondary { width: 9.4rem; }
+.md-nav__link { font-size: .69rem; line-height: 1.3; margin-top: .31em; }
+.md-nav__item--section > .md-nav__link { font-weight: 720; }
+.md-nav__item .md-nav__item { border-left-color: color-mix(in srgb, var(--tresomat-border) 52%, transparent); padding-left: .22rem; }
+.md-nav__link--active { background: color-mix(in srgb, var(--tresomat-blue) 8%, transparent); border-radius: 5px; box-shadow: inset 2px 0 0 var(--tresomat-blue); padding: .24rem .32rem; }
+
+.md-tabs__item { height: 2.65rem; }
+.md-tabs__link { border-bottom: 2px solid transparent; margin-top: .72rem; padding-bottom: .55rem; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.md-tabs__link--active { background: rgba(255,255,255,.055); border-bottom-color: #69acf0; color: #fff; }
+
+.md-path { color: color-mix(in srgb, var(--tresomat-muted) 78%, transparent); font-size: .66rem; margin-bottom: .65rem; }
+.md-path__link:hover { color: var(--tresomat-blue); }
+.md-nav--secondary .md-nav__link--active { background: transparent; box-shadow: inset 2px 0 0 var(--tresomat-blue); }
+
+.tresomat-hero { margin-bottom: 1.65rem; padding: clamp(1.65rem, 4.2vw, 3rem); }
+.md-typeset .tresomat-hero h1 { font-size: clamp(2.05rem, 4.4vw, 3rem); line-height: 1.02; margin-bottom: .55rem; }
+.tresomat-lead { font-size: clamp(.98rem, 1.8vw, 1.18rem); line-height: 1.44; margin: .4rem 0; }
+.tresomat-hero .md-button { margin-top: .42rem; }
+.tresomat-eyebrow { margin-bottom: .55rem; }
+
+.md-typeset .grid.cards > ul { align-items: stretch; }
+.md-typeset .grid.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+  min-height: 11.5rem;
+  padding: 1rem;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.md-typeset .grid.cards > ul > li:hover { box-shadow: var(--tresomat-shadow-hover); transform: translateY(-2px); }
+.md-typeset .grid.cards > ul > li > hr { margin-top: auto; }
+.md-typeset .grid.cards .lg { flex: 0 0 2.45rem; height: 2.45rem; width: 2.45rem; }
+.landing-cards .card-media-placeholder { align-items: center; aspect-ratio: 16 / 7; background: linear-gradient(135deg, color-mix(in srgb, var(--tresomat-blue) 8%, var(--tresomat-surface)), color-mix(in srgb, var(--tresomat-navy) 5%, var(--tresomat-surface))); border: 1px dashed color-mix(in srgb, var(--tresomat-blue) 25%, var(--tresomat-border)); border-radius: 8px; color: var(--tresomat-muted); display: flex; font-size: .65rem; justify-content: center; margin: -.15rem 0 .55rem; }
+.product-card-grid { display: grid; gap: .8rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.product-card { background: var(--tresomat-surface); border: 1px solid var(--tresomat-border); border-radius: var(--tresomat-radius); box-shadow: var(--tresomat-shadow-soft); overflow: hidden; transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.product-card:hover { border-color: color-mix(in srgb, var(--tresomat-blue) 55%, var(--tresomat-border)); box-shadow: var(--tresomat-shadow-hover); transform: translateY(-2px); }
+.product-card .card-media-placeholder { align-items: center; aspect-ratio: 16 / 7; background: linear-gradient(135deg, color-mix(in srgb, var(--tresomat-blue) 8%, var(--tresomat-surface)), color-mix(in srgb, var(--tresomat-navy) 5%, var(--tresomat-surface))); border-bottom: 1px dashed color-mix(in srgb, var(--tresomat-blue) 25%, var(--tresomat-border)); color: var(--tresomat-muted); display: flex; font-size: .65rem; justify-content: center; }
+.product-card__body { display: flex; flex-direction: column; min-height: 10.5rem; padding: 1rem; }
+.product-card__body h3 { margin: 0 0 .35rem; }
+.product-card__body p { color: var(--tresomat-muted); margin: 0; }
+.product-card__body a { border-top: 1px solid var(--tresomat-border); margin-top: auto; padding-top: .7rem; }
+.section-kicker { color: var(--tresomat-green); font-size: .72rem; font-weight: 760; letter-spacing: .09em; margin-bottom: .15rem; text-transform: uppercase; }
+
+.download-card { box-shadow: var(--tresomat-shadow-soft); min-height: 8.25rem; }
+.download-file { color: var(--tresomat-blue) !important; font-family: var(--md-code-font-family); font-size: .69rem; }
+.download-card .md-button { min-width: 8.4rem; text-align: center; }
+.support-callout--payment { border-left-color: var(--tresomat-blue); }
+
+.release-heading { background: color-mix(in srgb, var(--tresomat-navy) 4%, var(--tresomat-surface)); margin: -1.4rem -1.4rem 0; padding: 1.2rem 1.4rem 0; }
+.status-badge { border: 1px solid currentColor; opacity: .92; }
+
+.md-typeset table:not([class]) { border-width: 1px; box-shadow: var(--tresomat-shadow-soft); }
+.md-typeset table:not([class]) th { border-bottom: 1px solid var(--tresomat-border); }
+.md-typeset table:not([class]) td:first-child, .md-typeset table:not([class]) th:first-child { font-weight: 650; }
+
+.md-typeset .admonition, .md-typeset details { background: color-mix(in srgb, var(--tresomat-surface) 96%, var(--tresomat-blue)); box-shadow: var(--tresomat-shadow-soft); }
+.md-typeset .admonition.tip, .md-typeset details.tip, .md-typeset .admonition.success, .md-typeset details.success { border-color: var(--tresomat-green); }
+.md-typeset .tip > .admonition-title, .md-typeset .success > .admonition-title { background: color-mix(in srgb, var(--tresomat-green) 12%, transparent); }
+.md-typeset .warning > .admonition-title { background: color-mix(in srgb, #d69632 13%, transparent); }
+.md-typeset .danger > .admonition-title { background: color-mix(in srgb, #cf5555 12%, transparent); }
+
+.highlight .md-clipboard { color: #7ab8f1; }
+[data-md-color-scheme="slate"] .highlight { background: #101e30; border: 1px solid #263b55; border-radius: 8px; }
+[data-md-color-scheme="slate"] .md-code__content { color: #dce8f5; }
+
+@media (min-width: 76.25em) {
+  .md-sidebar--primary { margin-right: .6rem; }
+  .md-sidebar--secondary { margin-left: .6rem; }
+}
+@media (max-width: 76.234375em) {
+  .md-sidebar--secondary { display: none; }
+}
+@media (max-width: 60em) {
+  .md-path { font-size: .62rem; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .md-typeset .grid.cards > ul > li { min-height: 10.5rem; }
+}
+@media (max-width: 45em) {
+  .md-typeset .grid.cards > ul > li { min-height: 0; }
+  .tresomat-hero { padding: 1.45rem; }
+  .download-card { min-height: 0; }
+  .product-card-grid { grid-template-columns: 1fr; }
+}
+
+
+
+/* TRESOMAT Docs V2.2 */
+.tresomat-hero--compact { margin-bottom: 1.35rem; padding: .85rem 2rem; }
+.tresomat-hero--compact .hero-inner { align-items: center; display: flex; flex-direction: column; justify-content: center; min-height: 8rem; text-align: center; }
+.tresomat-hero--compact .hero-logo { display: block; line-height: 0; margin: 0 auto .3rem; }
+.tresomat-hero--compact .hero-logo img { display: block; height: auto; max-height: 4.3rem; max-width: min(19rem, 65vw); width: auto; }
+.md-typeset .tresomat-hero--compact h1 { color: #fff; font-size: clamp(1.55rem, 3vw, 2.1rem); line-height: 1.08; margin: .15rem 0 .6rem; text-align: center; }
+.tresomat-hero--compact .md-button { border-radius: 12px; margin: 0; padding: .55rem 1.05rem; text-align: center; transition: box-shadow .18s ease, transform .18s ease; }
+.tresomat-hero--compact .md-button:hover { box-shadow: 0 5px 14px rgba(0,0,0,.16); transform: translateY(-1px); }
+.tresomat-hero--protected .hero-inner { min-height: 7.5rem; }
+@media (max-width: 45em) {
+  .tresomat-hero--compact { padding: 1.1rem; }
+  .tresomat-hero--compact .hero-inner { min-height: 7.5rem; }
+  .tresomat-hero--compact .hero-logo img { max-height: 3.6rem; max-width: 70vw; }
+}

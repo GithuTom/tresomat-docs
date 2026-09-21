@@ -24,11 +24,16 @@ Die Vorschau ist anschließend unter <http://127.0.0.1:8000> erreichbar.
 
 ## Prüfen und bauen
 
-```bash
-mkdocs build --strict
+```powershell
+mkdocs build --strict -f mkdocs.public.yml
+python scripts/verify_public_build.py site-public
+mkdocs build --strict -f mkdocs.protected.yml
 ```
 
-Das Ergebnis wird im Ordner `site/` erzeugt. `site/` und `.venv/` werden nicht versioniert.
+Die öffentliche Ausgabe entsteht in `site-public/`, die geschützte technische Ausgabe in
+`site-protected/`. Die zusätzliche Prüfung stellt sicher, dass die öffentliche Ausgabe keine
+API- oder Support-Inhalte (einschließlich Suchindex) enthält. Build-Ordner und `.venv/` werden
+nicht versioniert.
 
 ## Medien und Downloads
 
@@ -40,6 +45,7 @@ Binärdateien nicht als Base64 in Markdown einbetten.
 
 ## Veröffentlichung
 
-Ein manueller GitHub-Pages-Workflow liegt unter `.github/workflows/docs.yml`. Er wird nur über
-„Run workflow“ gestartet. Für Cloudflare Pages kann `mkdocs build --strict` als Build-Befehl und
-`site` als Ausgabeverzeichnis verwendet werden. DNS-Konfiguration ist nicht Bestandteil dieses Projekts.
+Der GitHub-Actions-Workflow unter `.github/workflows/docs.yml` baut beide Varianten. Nur die
+öffentliche Ausgabe wird auf GitHub Pages veröffentlicht; die geschützte Ausgabe wird als
+Workflow-Artefakt bereitgestellt. Details stehen in `DEPLOYMENT_PUBLIC.md` und
+`DEPLOYMENT_PROTECTED.md`.

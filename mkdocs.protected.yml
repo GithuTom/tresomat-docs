@@ -1,69 +1,13 @@
-site_name: TRESOMAT Dokumentation
-site_url: https://docs.tresomat.ch/
-site_description: Dokumentation für TRESOMAT, Web-Portal und Integration API.
-copyright: © TRESOMAT · Dokumentation
-theme:
-  name: material
-  language: de
-  custom_dir: docs/overrides
-  font: false
-  favicon: assets/branding/favicon.png
-  palette:
-  - media: '(prefers-color-scheme: light)'
-    scheme: default
-    toggle:
-      icon: material/brightness-7
-      name: Dunkles Farbschema verwenden
-  - media: '(prefers-color-scheme: dark)'
-    scheme: slate
-    toggle:
-      icon: material/brightness-4
-      name: Helles Farbschema verwenden
-  features:
-  - navigation.tabs
-  - navigation.indexes
-  - navigation.path
-  - navigation.top
-  - navigation.tracking
-  - toc.follow
-  - search.highlight
-  - search.share
-  - content.code.copy
-  - content.tabs.link
-plugins:
-- search:
-    lang: de
-markdown_extensions:
-- admonition
-- attr_list
-- md_in_html
-- tables
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.tabbed:
-    alternate_style: true
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-- pymdownx.inlinehilite
-- pymdownx.emoji:
-    emoji_index: !!python/name:material.extensions.emoji.twemoji ''
-    emoji_generator: !!python/name:material.extensions.emoji.to_svg ''
-extra_css:
-- assets/stylesheets/tresomat.css
-extra_javascript:
-- assets/javascripts/tresomat.js
+INHERIT: mkdocs.yml
+site_name: TRESOMAT Technik-Dokumentation
+site_url: https://techdocs.tresomat.ch/
+site_dir: site-protected
 extra:
+  docs_variant: protected
   generator: false
-  social:
-  - icon: fontawesome/solid/globe
-    link: https://tresomat.ch
-    name: TRESOMAT Website
-  docs_variant: full
 nav:
 - Start: index.md
-- TRESOMAT:
+- TRESOMAT Technik:
   - Übersicht: tresomat/index.md
   - Frontend:
     - Übersicht: tresomat/frontend/index.md
@@ -229,7 +173,7 @@ nav:
       - Deinstallation: tresomat/installation-und-betrieb/deinstallation.md
       - Backup: tresomat/installation-und-betrieb/backup.md
     - Fehlerbehebung: tresomat/installation-und-betrieb/troubleshooting.md
-- Web-Portal:
+- Web-Portal Technik:
   - Übersicht: web-portal/index.md
   - Kundenbereich:
     - Einstieg:
@@ -292,7 +236,7 @@ nav:
       - Sprachpakete: web-portal/admin-support/sprachpakete.md
       - Mail / SMTP: web-portal/admin-support/mail-smtp.md
       - System: web-portal/admin-support/system.md
-- API:
+- Integration API:
   - Übersicht: api/index.md
   - Erste Schritte:
     - Erste Inbetriebnahme: api/erste-inbetriebnahme.md
@@ -349,16 +293,9 @@ nav:
   - Integration API: support/integration-api.md
   - Logs: support/logs.md
   - Checklisten: support/checklisten.md
-- Downloads:
+- Downloads Technik:
   - Übersicht: downloads/index.md
   - TRESOMAT Handbuch PDF: downloads/tresomat-handbuch-pdf.md
   - Web-Portal Handbuch PDF: downloads/web-portal-handbuch-pdf.md
   - Integration API Manual PDF: downloads/integration-api-manual-pdf.md
   - Release Notes PDF: downloads/release-notes-pdf.md
-- Release Notes:
-  - Übersicht: release-notes/index.md
-  - TRESOMAT: release-notes/tresomat.md
-  - Web-Portal: release-notes/web-portal.md
-  - Integration API: release-notes/integration-api.md
-hooks:
-- hooks/build_split.py

@@ -2,7 +2,7 @@
 
 <p class="page-lead">Was möchten Sie lösen?</p>
 
-<div class="grid cards" markdown>
+<div class="grid cards landing-cards" markdown>
 
 -   :material-credit-card-outline:{ .lg .middle }
 
@@ -12,7 +12,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](zahlung-nicht-abgeschlossen.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](zahlung-nicht-abgeschlossen.md)
 
 -   :material-barcode-scan:{ .lg .middle }
 
@@ -22,7 +22,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](scanner.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](scanner.md)
 
 -   :material-receipt-text-outline:{ .lg .middle }
 
@@ -32,17 +32,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](drucker-quittung.md)
-
--   :material-contactless-payment:{ .lg .middle }
-
-    **PayTec**
-
-    Terminalverbindung und Kartenzahlungen analysieren.
-
-    ---
-
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](paytec.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](drucker-quittung.md)
 
 -   :material-cash-register:{ .lg .middle }
 
@@ -52,7 +42,17 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](cashmatic.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](cashmatic.md)
+
+-   :material-contactless-payment:{ .lg .middle }
+
+    **PayTec**
+
+    Terminalverbindung und Kartenzahlungen analysieren.
+
+    ---
+
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](paytec.md)
 
 -   :material-cloud-sync-outline:{ .lg .middle }
 
@@ -62,7 +62,7 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](cloud-sync.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](cloud-sync.md)
 
 -   :material-api:{ .lg .middle }
 
@@ -72,27 +72,27 @@
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](integration-api.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](integration-api.md)
 
 -   :material-monitor-dashboard:{ .lg .middle }
 
-    **Portal**
+    **Web-Portal**
 
     Anmeldung, Maschinenansicht und Reports prüfen.
 
     ---
 
-    [Bereich öffnen :material-arrow-right:{ .link-icon }](web-portal.md)
+    [Mehr erfahren :material-arrow-right:{ .link-icon }](web-portal.md)
 
 </div>
 
-<div class="support-callout" markdown>
+<div class="support-callout support-callout--payment" markdown>
 
 ## Problem mit einer Zahlung?
 
-Finden Sie zuerst die Vorgangsnummer auf der Quittung und öffnen Sie anschließend die Vorgangsanalyse.
+Verwenden Sie die Vorgangsnummer auf der Quittung, um den betroffenen Vorgang eindeutig zu finden.
 
-[Vorgangsnummer verstehen](vorgangsnummer-verstehen.md){ .md-button }
+[Vorgangsnummer verwenden](vorgangsnummer-verstehen.md){ .md-button }
 [Vorgang suchen](vorgang-suchen.md){ .md-button .md-button--primary }
 
 </div>
