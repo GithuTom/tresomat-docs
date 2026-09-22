@@ -16,6 +16,25 @@ nav:
       - Hardware:
         - OPOS-Scanner: tresomat/frontend/scanning/opos-scanner.md
         - Keyboard-Fallback: tresomat/frontend/scanning/keyboard-fallback.md
+      - Standard-Barcodes:
+        - Übersicht: tresomat/frontend/scanning/standard-barcodes/index.md
+        - EAN-13: tresomat/frontend/scanning/standard-barcodes/ean-13.md
+        - EAN-8: tresomat/frontend/scanning/standard-barcodes/ean-8.md
+        - UPC-A: tresomat/frontend/scanning/standard-barcodes/upc-a.md
+        - UPC ohne Prüfziffer: tresomat/frontend/scanning/standard-barcodes/upc-ohne-pruefziffer.md
+      - Preis-Barcodes:
+        - Übersicht: tresomat/frontend/scanning/preis-barcodes/index.md
+        - Präfix 21: tresomat/frontend/scanning/preis-barcodes/prefix-21.md
+        - Präfix 22: tresomat/frontend/scanning/preis-barcodes/prefix-22.md
+      - Gewichts-Barcodes:
+        - Übersicht: tresomat/frontend/scanning/gewichts-barcodes/index.md
+        - Präfix 28: tresomat/frontend/scanning/gewichts-barcodes/prefix-28.md
+        - Präfix 29: tresomat/frontend/scanning/gewichts-barcodes/prefix-29.md
+      - Spezialcodes:
+        - Übersicht: tresomat/frontend/scanning/spezialcodes/index.md
+        - 9002 Rabatt: tresomat/frontend/scanning/spezialcodes/prefix-9002-rabatt.md
+        - 9003 Depot / Rückerstattung: tresomat/frontend/scanning/spezialcodes/prefix-9003-depot-rueckerstattung.md
+      - Barcode zuweisen: tresomat/frontend/scanning/barcode-einem-produkt-zuweisen.md
       - Diagnose:
         - Prüfziffern: tresomat/frontend/scanning/pruefziffern.md
         - Duplikatschutz: tresomat/frontend/scanning/duplikatschutz.md
@@ -125,17 +144,21 @@ nav:
       - System: web-portal/admin-support/system.md
 - Support:
   - Übersicht: support/index.md
-  - Vorgang suchen: support/vorgang-suchen.md
-  - Vorgangsnummer verstehen: support/vorgangsnummer-verstehen.md
-  - Zahlung nicht abgeschlossen: support/zahlung-nicht-abgeschlossen.md
-  - Cashmatic: support/cashmatic.md
-  - PayTec: support/paytec.md
-  - Scanner: support/scanner.md
-  - Drucker / Quittung: support/drucker-quittung.md
-  - Cloud Sync: support/cloud-sync.md
-  - Web-Portal: support/web-portal.md
-  - Logs: support/logs.md
-  - Checklisten: support/checklisten.md
+  - Zahlung:
+    - Vorgang suchen: support/vorgang-suchen.md
+    - Vorgangsnummer verstehen: support/vorgangsnummer-verstehen.md
+    - Zahlung nicht abgeschlossen: support/zahlung-nicht-abgeschlossen.md
+  - Hardware:
+    - Cashmatic: support/cashmatic.md
+    - PayTec: support/paytec.md
+    - Scanner: support/scanner.md
+    - Drucker / Quittung: support/drucker-quittung.md
+  - Sync & Portal:
+    - Cloud Sync: support/cloud-sync.md
+    - Web-Portal: support/web-portal.md
+  - Diagnose:
+    - Logs: support/logs.md
+    - Checklisten: support/checklisten.md
 - Downloads:
   - Übersicht: downloads/index.md
   - TRESOMAT Handbuch PDF: downloads/tresomat-handbuch-pdf.md

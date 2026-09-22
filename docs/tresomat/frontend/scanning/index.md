@@ -1,8 +1,6 @@
 # Scanning
 
-<p class="section-kicker">Scanner-Codes auf einen Blick</p>
-
-<p class="section-kicker">Scanner-Codes auf einen Blick</p>
+<p class="section-kicker">Scanning</p>
 
 <p class="page-lead">Referenz für Scannerbetrieb, Barcodeformate und Spezialcodes.</p>
 
