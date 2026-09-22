@@ -1,0 +1,147 @@
+INHERIT: mkdocs.yml
+site_name: TRESOMAT Technik-Dokumentation
+site_url: https://techdocs.tresomat.ch/
+site_dir: site-techdocs
+extra:
+  docs_variant: techdocs
+  generator: false
+nav:
+- Start: index.md
+- TRESOMAT Technik:
+  - Übersicht: tresomat/index.md
+  - Frontend:
+    - Scanning:
+      - Übersicht: tresomat/frontend/scanning/index.md
+      - Scannerbetrieb: tresomat/frontend/scanning/scannerbetrieb.md
+      - Hardware:
+        - OPOS-Scanner: tresomat/frontend/scanning/opos-scanner.md
+        - Keyboard-Fallback: tresomat/frontend/scanning/keyboard-fallback.md
+      - Diagnose:
+        - Prüfziffern: tresomat/frontend/scanning/pruefziffern.md
+        - Duplikatschutz: tresomat/frontend/scanning/duplikatschutz.md
+        - Timing / Inter-Key-Gap: tresomat/frontend/scanning/timing-inter-key-gap.md
+        - Nicht erkannter Barcode: tresomat/frontend/scanning/nicht-erkannter-barcode.md
+        - Beispiele: tresomat/frontend/scanning/beispiele.md
+    - Zahlung:
+      - Übersicht: tresomat/frontend/zahlung/index.md
+      - Geräte:
+        - Cashmatic: tresomat/frontend/zahlung/cashmatic.md
+        - Karte / PayTec: tresomat/frontend/zahlung/karte-paytec.md
+  - Backend:
+    - Übersicht: tresomat/backend/index.md
+    - Benutzer & Zugriff:
+      - Anmeldung / PIN: tresomat/backend/anmeldung-pin.md
+      - Benutzer: tresomat/backend/benutzer.md
+    - Stammdaten:
+      - Produkte: tresomat/backend/produkte.md
+      - Kategorien: tresomat/backend/kategorien.md
+      - Marken: tresomat/backend/marken.md
+    - Verkauf & Auswertung:
+      - Dashboard: tresomat/backend/dashboard.md
+      - Transaktionen: tresomat/backend/transaktionen.md
+      - Tagesabschluss: tresomat/backend/tagesabschluss.md
+    - Dokumente:
+      - Übersicht: tresomat/backend/dokumente/index.md
+      - Quittungsdesigner: tresomat/backend/dokumente/quittungsdesigner.md
+      - Transaktionsdokument: tresomat/backend/dokumente/transaktionsdokument.md
+      - Verkaufsjournal: tresomat/backend/dokumente/verkaufsjournal.md
+      - Mehrwertsteuer: tresomat/backend/dokumente/mehrwertsteuer.md
+      - Vorgangsanalyse: tresomat/backend/dokumente/vorgangsanalyse.md
+    - Betrieb:
+      - Datenbanken:
+        - Übersicht: tresomat/backend/datenbanken/index.md
+        - Backup: tresomat/backend/datenbanken/backup.md
+        - Wiederherstellung: tresomat/backend/datenbanken/wiederherstellung.md
+        - Aufbewahrung: tresomat/backend/datenbanken/aufbewahrung.md
+        - Bereinigung: tresomat/backend/datenbanken/bereinigung.md
+      - Messenger:
+        - Übersicht: tresomat/backend/messenger/index.md
+        - SMTP: tresomat/backend/messenger/smtp.md
+        - Benachrichtigungen: tresomat/backend/messenger/benachrichtigungen.md
+        - Ereignisse: tresomat/backend/messenger/ereignisse.md
+      - Updates: tresomat/backend/updates.md
+      - Cloud Sync: tresomat/backend/cloud-sync.md
+    - Hardware:
+      - Übersicht: tresomat/backend/hardware/index.md
+      - Scanner: tresomat/backend/hardware/scanner.md
+      - Cashmatic Admin: tresomat/backend/hardware/cashmatic-admin.md
+      - PayTec Terminal: tresomat/backend/hardware/paytec-terminal.md
+      - Drucker: tresomat/backend/hardware/drucker.md
+  - Installation & Betrieb:
+    - Übersicht: tresomat/installation-und-betrieb/index.md
+    - Erste Schritte:
+      - Voraussetzungen: tresomat/installation-und-betrieb/voraussetzungen.md
+      - Installation: tresomat/installation-und-betrieb/installation.md
+    - Konfiguration:
+      - Config.xml:
+        - Übersicht: tresomat/installation-und-betrieb/configxml/index.md
+        - Frontend: tresomat/installation-und-betrieb/configxml/frontenddarstellung.md
+        - Shop: tresomat/installation-und-betrieb/configxml/shop.md
+        - Warenkorb: tresomat/installation-und-betrieb/configxml/warenkorb.md
+        - Ziffernblock: tresomat/installation-und-betrieb/configxml/ziffernblock.md
+        - Scanner: tresomat/installation-und-betrieb/configxml/scanner.md
+        - Cashmatic: tresomat/installation-und-betrieb/configxml/cashmatic.md
+        - PayTec: tresomat/installation-und-betrieb/configxml/paytec.md
+        - Quittungen: tresomat/installation-und-betrieb/configxml/quittungen.md
+        - Screensaver: tresomat/installation-und-betrieb/configxml/screensaver.md
+        - Cloud Sync: tresomat/installation-und-betrieb/configxml/cloud-sync.md
+    - Update & Wartung:
+      - Update: tresomat/installation-und-betrieb/update.md
+      - Reinstallation: tresomat/installation-und-betrieb/reinstallation.md
+      - Deinstallation: tresomat/installation-und-betrieb/deinstallation.md
+      - Backup: tresomat/installation-und-betrieb/backup.md
+    - Fehlerbehebung: tresomat/installation-und-betrieb/troubleshooting.md
+- Web-Portal Technik:
+  - Übersicht: web-portal/index.md
+  - Admin / Support:
+    - Übersicht: web-portal/admin-support/index.md
+    - Kunden & Maschinen:
+      - Kunden: web-portal/admin-support/kunden.md
+      - Maschinen: web-portal/admin-support/maschinen.md
+      - Registrierung & Kopplung: web-portal/admin-support/registrierung-und-kopplung.md
+      - Machine Tokens: web-portal/admin-support/machine-tokens.md
+    - Synchronisation & Health:
+      - Cloud Sync:
+        - Übersicht: web-portal/admin-support/cloud-sync/index.md
+        - Status: web-portal/admin-support/cloud-sync/status.md
+        - Pending: web-portal/admin-support/cloud-sync/pending.md
+        - Failed: web-portal/admin-support/cloud-sync/failed.md
+        - Konflikte: web-portal/admin-support/cloud-sync/konflikte.md
+        - letzter Sync: web-portal/admin-support/cloud-sync/letzter-sync.md
+      - Health Center:
+        - Übersicht: web-portal/admin-support/health-center/index.md
+        - Timeline: web-portal/admin-support/health-center/timeline.md
+        - Diagnose: web-portal/admin-support/health-center/diagnose.md
+    - Updates:
+      - Update Center: web-portal/admin-support/update-center.md
+    - Benutzer & Security:
+      - Benutzer & Rollen: web-portal/admin-support/benutzer-und-rollen.md
+      - Kundenlogin / Supportzugriff: web-portal/admin-support/kundenlogin-supportzugriff.md
+      - Security: web-portal/admin-support/security.md
+      - Audit Log: web-portal/admin-support/audit-log.md
+    - System:
+      - Sprachpakete: web-portal/admin-support/sprachpakete.md
+      - Mail / SMTP: web-portal/admin-support/mail-smtp.md
+      - System: web-portal/admin-support/system.md
+- Support:
+  - Übersicht: support/index.md
+  - Vorgang suchen: support/vorgang-suchen.md
+  - Vorgangsnummer verstehen: support/vorgangsnummer-verstehen.md
+  - Zahlung nicht abgeschlossen: support/zahlung-nicht-abgeschlossen.md
+  - Cashmatic: support/cashmatic.md
+  - PayTec: support/paytec.md
+  - Scanner: support/scanner.md
+  - Drucker / Quittung: support/drucker-quittung.md
+  - Cloud Sync: support/cloud-sync.md
+  - Web-Portal: support/web-portal.md
+  - Logs: support/logs.md
+  - Checklisten: support/checklisten.md
+- Downloads:
+  - Übersicht: downloads/index.md
+  - TRESOMAT Handbuch PDF: downloads/tresomat-handbuch-pdf.md
+  - Web-Portal Handbuch PDF: downloads/web-portal-handbuch-pdf.md
+  - Release Notes PDF: downloads/release-notes-pdf.md
+- Release Notes:
+  - Übersicht: release-notes/index.md
+  - TRESOMAT: release-notes/tresomat.md
+  - Web-Portal: release-notes/web-portal.md

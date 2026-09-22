@@ -26,14 +26,16 @@ Die Vorschau ist anschließend unter <http://127.0.0.1:8000> erreichbar.
 
 ```powershell
 mkdocs build --strict -f mkdocs.public.yml
-python scripts/verify_public_build.py site-public
-mkdocs build --strict -f mkdocs.protected.yml
+python scripts/verify_role_build.py public site-public
+mkdocs build --strict -f mkdocs.techdocs.yml
+python scripts/verify_role_build.py techdocs site-techdocs
+mkdocs build --strict -f mkdocs.api.yml
+python scripts/verify_role_build.py api site-api
 ```
 
-Die öffentliche Ausgabe entsteht in `site-public/`, die geschützte technische Ausgabe in
-`site-protected/`. Die zusätzliche Prüfung stellt sicher, dass die öffentliche Ausgabe keine
-API- oder Support-Inhalte (einschließlich Suchindex) enthält. Build-Ordner und `.venv/` werden
-nicht versioniert.
+Die drei getrennten Ausgaben entstehen in `site-public/`, `site-techdocs/` und `site-api/`.
+Die Prüfungen validieren Navigation, HTML-Ausgabe, Suchindex, lokale Links und Rollentrennung.
+Build-Ordner und `.venv/` werden nicht versioniert.
 
 ## Medien und Downloads
 
@@ -45,7 +47,6 @@ Binärdateien nicht als Base64 in Markdown einbetten.
 
 ## Veröffentlichung
 
-Der GitHub-Actions-Workflow unter `.github/workflows/docs.yml` baut beide Varianten. Nur die
-öffentliche Ausgabe wird auf GitHub Pages veröffentlicht; die geschützte Ausgabe wird als
-Workflow-Artefakt bereitgestellt. Details stehen in `DEPLOYMENT_PUBLIC.md` und
-`DEPLOYMENT_PROTECTED.md`.
+Der GitHub-Actions-Workflow unter `.github/workflows/docs.yml` baut alle drei Varianten. Nur
+Public wird auf GitHub Pages veröffentlicht; Techdocs und API werden als getrennte Artefakte
+bereitgestellt. Details stehen in den drei `DEPLOYMENT_*.md`-Dokumenten.

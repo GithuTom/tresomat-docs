@@ -1,0 +1,57 @@
+INHERIT: mkdocs.yml
+site_name: TRESOMAT Integration API
+site_url: https://api.tresomat.ch/
+site_dir: site-api
+extra:
+  docs_variant: api
+  generator: false
+nav:
+- Start: index.md
+- Integration API:
+  - Übersicht: api/index.md
+  - Erste Schritte: api/erste-inbetriebnahme.md
+  - Konfiguration: api/konfiguration.md
+  - Authentifizierung:
+    - Übersicht: api/authentifizierung/index.md
+    - Login: api/authentifizierung/login.md
+    - Bearer Token: api/authentifizierung/bearer-token.md
+    - Refresh Token: api/authentifizierung/refresh-token.md
+  - Clients & Secrets:
+    - ClientId / ClientSecret: api/clientid-clientsecret.md
+    - SecretHash: api/secrethash.md
+    - SigningKey: api/signingkey.md
+    - Scopes: api/scopes.md
+  - Catalog:
+    - Übersicht: api/catalog/index.md
+    - Produkte: api/catalog/produkte.md
+    - Kategorien: api/catalog/kategorien.md
+    - Marken: api/catalog/marken.md
+  - Sales: api/sales.md
+  - Transactions: api/transactions.md
+  - Payments:
+    - Übersicht: api/payments/index.md
+    - Cash: api/payments/cash.md
+    - Card: api/payments/card.md
+    - Status: api/payments/status.md
+    - Idempotency: api/payments/idempotency.md
+    - Recovery Required: api/payments/recovery-required.md
+  - System:
+    - Übersicht: api/system/index.md
+    - Health: api/system/health.md
+    - Status: api/system/status.md
+  - Tools:
+    - Swagger: api/swagger.md
+    - Postman: api/postman.md
+    - Testclient: api/testclient.md
+  - Codebeispiele:
+    - Übersicht: api/codebeispiele/index.md
+    - cURL: api/codebeispiele/curl.md
+    - PowerShell: api/codebeispiele/powershell.md
+    - C#: api/codebeispiele/csharp.md
+  - Fehlercodes: api/fehlercodes.md
+- Downloads:
+  - Übersicht: downloads/index.md
+  - Integration API Manual PDF: downloads/integration-api-manual-pdf.md
+- Release Notes:
+  - Übersicht: release-notes/index.md
+  - Integration API: release-notes/integration-api.md

@@ -2,9 +2,7 @@
 
 ```bash
 mkdocs build --strict -f mkdocs.public.yml
-python scripts/verify_public_build.py site-public
+python scripts/verify_role_build.py public site-public
 ```
 
-Der GitHub-Pages-Workflow veröffentlicht ausschließlich `site-public/`. Das Hosting muss alte Dateien beim Deployment vollständig ersetzen, damit frühere `/api/`- und `/support/`-Routen anschließend 404 liefern.
-
-Später kann dieselbe Ausgabe unter `https://docs.tresomat.ch` bereitgestellt werden.
+`site-public/` wird vom GitHub-Actions-Workflow auf GitHub Pages veröffentlicht. Vorgesehene Domain: `docs.tresomat.ch`. DNS und Custom-Domain-Zuordnung erfolgen getrennt; keine Zugangsdaten werden im Repository gespeichert.
